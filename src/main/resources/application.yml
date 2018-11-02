@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+
+  profiles:
+    active: ${SERVER_PROFILE:local}
+
+app:
+  jwtSecret: JWTSuperSecretKey-for512bitTTplease
+  jwtExpirationInMs: 604800000
